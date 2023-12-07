@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | QR code component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: hsl(212, 45%, 89%);
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
+    .qr-container {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      width: 245px;
+      border-radius: 20px;
+    }
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+    h3 {
+      color: hsl(218, 44%, 22%)
+    }
+    h3, p {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    /* Media query for screens up to 375px width */
+    @media (max-width: 375px) {
+      .container {
+        padding: 15px; /* Adjusted padding for smaller screens */
+      }
+      .qr-container {
+        width: calc(100% - 30px); /* Full width with some spacing for smaller screens */
+        border-radius: 20px; /* Reduced border radius for smaller screens */
+        padding: 15px; /* Adjusted padding for smaller screens */
+      }
+      img {
+        border-radius: 20px; /* Reduced border radius for smaller screens */
+      }
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="qr-container">
+      <img src="./images/image-qr-code.png" alt="QR"/>
+      <h3>Improve your front-end skills by building projects</h3>
+      <p style="color: grey;">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+</body>
+</html>
